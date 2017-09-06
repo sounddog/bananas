@@ -51,7 +51,7 @@ public class Calculate {
 			return true;
 		}else{
 			return false;
-//LOL
+//LOL 
 		}
 	
 	}
@@ -76,8 +76,7 @@ public class Calculate {
 			return y;
 		} else { 
 			return z;
-		}
-			
+		}	
 	}
 	public static int min(int x, int y) {
 		if(x>y) {
@@ -85,15 +84,12 @@ public class Calculate {
 		} else {
 			return x;
 		}
-	
 	}
 	public static double round2 (double x) {
 		if((x*1000) % 10 < 5) {
 			return ((x*1000)-((x*1000)%10))/1000;
 		} else {
 			return ((10-((x*1000)%10))+(x*1000))/1000;
-		}
-		
+		}	
 	}
-	
 }
