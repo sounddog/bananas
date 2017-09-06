@@ -8,7 +8,7 @@ public class DoMath {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		System.out.println(Calculate.toMixedNum(7,2));
+		System.out.println(Calculate.round2(0.686));
 	}
 	
 }
