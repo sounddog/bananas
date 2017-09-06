@@ -43,7 +43,7 @@ public class Calculate {
 		return (a*b+letter+"^2" )+"+"+((a*d)+(b*c)+letter)+"+"+(b*d);
 	}
 	public static String toMixedNum(int numerator, int denominator) {
-		return numerator/denominator+"_"+numerator%denominator+"/2";
+		return numerator/denominator+"_"+numerator%denominator+"/" + denominator;
 	}
 //sep 6 2017
 	public static boolean isDivisibleBy(int dividend, int divisor) {	
