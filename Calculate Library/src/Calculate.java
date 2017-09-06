@@ -53,6 +53,7 @@ public class Calculate {
 			return true;
 		} else {
 			return false;
+			//LOL
 		}
 		
 	}
