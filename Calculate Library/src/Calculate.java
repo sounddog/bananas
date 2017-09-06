@@ -7,7 +7,7 @@ public class Calculate {
 //method takes int and returns its square
 		public static int square (int x) {
 			return x*x;
-	}
+		}
 //return cube of int
 		public static int cube (int x) {
 			return x*x*x;
@@ -51,25 +51,25 @@ public class Calculate {
 		public static boolean isDivisibleBy(int dividend, int divisor) {	
 			if(dividend % divisor == 0) {
 				return true;
-		}	else {
+			}else{
 				return false;
 //LOL
-		}
+			}
 		
-	}
-		public static double absValue (double x) {
+		}
+	public static double absValue (double x) {
 			if(x>=0) {
 		return x;
-	} 		else {
+			}else{
 		return -x;
+			}
 	}
-}
 		public static double max (double x, double y) {
 			if(x>y) {
 				return x; 
 			} else {
 				return y;
-	}
+			}
 		}
 		public static double max (double x, double y, double z) {
 			if (x>y) {
@@ -86,16 +86,16 @@ public class Calculate {
 				return y;
 			} else {
 				return x;
-	}
+			}
 	
-	}
+		}
 		public static double round2 (double x) {
 			if((x*1000) % 10 < 5) {
 				return ((x*1000)-((x*1000)%10))/1000;
 			} else {
 				return ((10-((x*1000)%10))+(x*1000))/1000;
-	}
+			}
 		
-	}
+		}
 	
-	}
+}
