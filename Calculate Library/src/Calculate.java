@@ -37,10 +37,10 @@ public class Calculate {
 	}		
 //returns string after foil
 //must enter in specific order 
-//string must be entered with its own set of round brackes and quotes in method entered
-	public static String foil(int a, int b, int c, int d, String letter) {
+//string(letter variable) must be entered with its own set of round brackets and quotes in method entered
+	public static String foil(int a, int b, int c, int d, String variable) {
 //(ax+b)(cx+d)=acx^2+adx+bcx+bd
-		return (a*b+letter+"^2" )+"+"+((a*d)+(b*c)+letter)+"+"+(b*d);
+		return (a*b+variable+"^2" )+"+"+((a*d)+(b*c)+variable)+"+"+(b*d);
 	}
 	public static String toMixedNum(int numerator, int denominator) {
 		return numerator/denominator+"_"+numerator%denominator+"/" + denominator;
