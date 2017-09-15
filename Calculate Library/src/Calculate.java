@@ -52,8 +52,7 @@ public class Calculate {
 		}else{
 			return false;
 //LOL 
-		}
-	
+		}	
 	}
 	public static double absValue (double x) {
 			if(x>=0) {
@@ -86,10 +85,48 @@ public class Calculate {
 		}
 	}
 	public static double round2 (double x) {
-		if((x*1000) % 10 < 5) {
+		if((x*1000) % 10 < 5) {	
 			return ((x*1000)-((x*1000)%10))/1000;
 		} else {
 			return ((10-((x*1000)%10))+(x*1000))/1000;
 		}	
+	}
+// 10 sep 2017
+	public static double exponent (double base, int exponent) {
+		double result=1; 
+			for (int n=1; n<=exponent; n++) {
+				result  *= base;		
+			}
+			return result; 
+	}
+	public static int factorial (int x) {
+		int result = x;
+		for (int i = 1; i < x; i++) {
+			result *= x - i;
+		}
+		return result;
+	}
+
+//think of as a set of filters
+//eliminate obvious numbers first such as even numbers 
+	public static boolean isPrime(int x) {
+		if(x < 2) {
+			return false;
+		} else if(x == 2) {
+			return true;
+		} else if(isDivisibleBy(x,2)) {
+			return false;
+		} else {
+			for(int i = 3; i < x; i++) {
+				if(x % i == 0) {
+					return false;
+				}
+			}
+		}
+		return true;
+	}
+	public static int gcf(int x, int y) {
+		int i
+		for((i=1, x%i==0 ,i++) && (i=1)
 	}
 }
